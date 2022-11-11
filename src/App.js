@@ -5,7 +5,6 @@ import Videos from './components/Videos'
 import VideoService from './services/video'
 function App() {
   const [videos, setVideos] = useState([]);
-
   useEffect(() => {
     VideoService.getAll().onSnapshot(items => {
       let result = []
